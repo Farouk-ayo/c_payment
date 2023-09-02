@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cardpayment</title>
+    <script defer src="index.js"></script>
+  </head>
+  <body>
+    <main>
+      <section class="container">
+        <div class="card">
+          <div class="card--front">
+            <div>
+              <div class="card--front__chip">
+                <img
+                  src="https://www.svgrepo.com/show/303229/visa.svg"
+                  alt=""
+                />
+              </div>
+              <div class="card--front__logo">
+                <img
+                  src="https://www.svgrepo.com/show/303229/visa.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div>
+              <div class="card--front__number">
+                <p>card holder</p>
+              </div>
+              <div class="card--front__expiration">
+                <p>card holder</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <form action="">
+          <label for="cardNumber">Card Number</label>
+          <input type="text" name="cardNumber" id="cardNumber" />
+          <label for="cardHolder">Card Holder</label>
+          <input type="text" name="cardHolder" id="cardHolder" />
+          <label for="cardExpiration">Card Expiration</label>
+          <input type="text" name="cardExpiration" id="cardExpiration" />
+          <label for="cardCvv">Card CVV</label>
+          <input type="text" name="cardCvv" id="cardCvv" />
+          <button>submit</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
