@@ -81,12 +81,12 @@ main {
   background-color: white;
   border-radius: 1rem;
   z-index: 1;
-  color: #444;
+  color: #636363;
 }
 .form {
   display: flex;
   flex-direction: column;
-  gap: 0.7rem;
+  gap: 1rem;
 }
 
 .card--info {
@@ -106,7 +106,7 @@ main {
 .form div label {
   text-transform: uppercase;
   font-size: 0.9rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 .form div input {
   padding: 0.5rem;
@@ -114,6 +114,11 @@ main {
   border-radius: 0.4rem;
   font-size: 1rem;
   letter-spacing: 0.2rem;
+}
+.form div input:active,
+.form div input:focus,
+.form div input:target {
+  outline: none;
 }
 
 .form div input::placeholder {
@@ -130,9 +135,19 @@ main {
 .datas {
   display: flex;
   flex-direction: column;
+  gap: 0.5rem;
 }
 .time {
   display: flex;
+  gap: 1rem;
+}
+.time select {
+  padding: 0.5rem;
+  border: 0.1rem #988c8c solid;
+  border-radius: 0.4rem;
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+  width: 4rem;
 }
 .button {
   width: 100%;
@@ -152,4 +167,8 @@ main {
 
 .button:hover {
   background-color: rgb(34, 88, 120);
+}
+
+.cvv {
+  width: 8rem;
 }
