@@ -49,6 +49,7 @@ main {
   backface-visibility: hidden;
   overflow: hidden;
   transition: all 1s;
+  box-shadow: 0 0.5rem 0.5rem #e7cece;
 }
 
 .card--front {
@@ -59,9 +60,18 @@ main {
 
 .card--back {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  gap: 0.5rem;
   align-items: center;
   transform: rotateY(180deg);
+  font-size: 1rem;
+  color: white;
+}
+
+.card--cvv {
+  font-size: 1.6rem;
+  color: white;
 }
 .card:hover .card--front {
   transform: rotateY(-180deg);
@@ -121,7 +131,7 @@ main {
   background-color: white;
   border-radius: 1rem;
   z-index: 1;
-  color: #636363;
+  color: #4e3623;
 }
 .form {
   display: flex;
@@ -149,8 +159,8 @@ main {
   font-weight: 600;
 }
 .form div input {
-  padding: 0.5rem;
-  border: 0.1rem #988c8c solid;
+  padding: 0.8rem 1rem;
+  border: 0.1rem #745237 solid;
   border-radius: 0.4rem;
   font-size: 1rem;
   letter-spacing: 0.2rem;
@@ -164,7 +174,7 @@ main {
 .form div input::placeholder {
   text-transform: uppercase;
   letter-spacing: 0.2rem;
-  color: #4444447d;
+  color: #3d2b1d6a;
 }
 
 .cardDatas {
@@ -182,31 +192,36 @@ main {
   gap: 1rem;
 }
 .time select {
+  appearance: none;
   padding: 0.5rem;
-  border: 0.1rem #988c8c solid;
+  border: 0.1rem #745237 solid;
   border-radius: 0.4rem;
   font-size: 1rem;
   letter-spacing: 0.2rem;
-  width: 4rem;
+  width: 5.5rem;
+  outline: none;
+  background-image: url("icons/down-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
 }
 .button {
   width: 100%;
   margin: 0 auto;
   padding: 1rem;
   border-radius: 0.5rem;
-  background: linear-gradient(135deg, brown, #fa1e1e);
+  background: linear-gradient(110deg, brown, rgb(117, 117, 253));
   color: white;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1rem;
   text-transform: uppercase;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.4rem;
   border: none;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
+  transition: all 3s ease-in-out;
 }
 
 .button:hover {
-  background: linear-gradient(135deg, brown, #fb5454);
+  background: linear-gradient(135deg, brown, rgb(99, 99, 249));
 }
 
 .cvv {

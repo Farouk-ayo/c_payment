@@ -41,7 +41,10 @@
               </div>
             </div>
           </div>
-          <div class="card--side card--back"></div>
+          <div class="card--side card--back">
+            <p>cvv</p>
+            <p class="card--cvv"></p>
+          </div>
         </div>
       </section>
       <section class="formContainer">
@@ -95,6 +98,7 @@
               class="holder"
               id="holder"
               placeholder="Mustapha Farouk Opeyemi"
+              required
             />
           </div>
           <div class="cardDatas">
@@ -102,27 +106,27 @@
               <label for="month">Card Expiration</label>
               <div class="time">
                 <select name="month" id="month">
-                  <option value="01">1</option>
-                  <option value="02">2</option>
-                  <option value="03">3</option>
-                  <option value="04">4</option>
-                  <option value="05">5</option>
-                  <option value="06">6</option>
-                  <option value="07">7</option>
-                  <option value="08">8</option>
-                  <option value="09">9</option>
+                  <option value="01">01</option>
+                  <option value="02">02</option>
+                  <option value="03">03</option>
+                  <option value="04">04</option>
+                  <option value="05">05</option>
+                  <option value="06">06</option>
+                  <option value="07">07</option>
+                  <option value="08">08</option>
+                  <option value="09">09</option>
                   <option value="10">10</option>
                   <option value="11">11</option>
                   <option value="12">12</option>
                 </select>
 
-                <select name="year" id="year">
-                  <option value="23">23</option>
-                  <option value="24">24</option>
-                  <option value="25">25</option>
-                  <option value="26">26</option>
-                  <option value="27">27</option>
-                  <option value="28">28</option>
+                <select name="year" id="year" required>
+                  <option value="23">2023</option>
+                  <option value="24">2024</option>
+                  <option value="25">2025</option>
+                  <option value="26">2026</option>
+                  <option value="27">2027</option>
+                  <option value="28">2028</option>
                 </select>
               </div>
             </div>
@@ -134,6 +138,7 @@
                 id="cvv"
                 class="cvv"
                 maxlength="3"
+                required
               />
             </div>
           </div>

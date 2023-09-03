@@ -6,6 +6,13 @@ const month = document.querySelector("#expirationMonth");
 const year = document.querySelector("#expirationYear");
 const monthInput = document.querySelector("#month");
 const yearInput = document.querySelector("#year");
+const cvvInput = document.querySelector(".cvv");
+const cvv = document.querySelector(".card--cvv");
+
+document.addEventListener("DOMContentLoaded", () => {
+  monthInput.value = "";
+  yearInput.value = "";
+});
 
 card.forEach((eachInput, index) => {
   eachInput.addEventListener("input", () => {
@@ -33,4 +40,9 @@ monthInput.addEventListener("input", () => {
 
 yearInput.addEventListener("input", () => {
   year.textContent = "/" + yearInput.value;
+});
+
+cvvInput.addEventListener("input", () => {
+  cvvInput.value = cvvInput.value.replace(/\D/g, "");
+  cvv.textContent = cvvInput.value;
 });
