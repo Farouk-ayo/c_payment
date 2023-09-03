@@ -31,17 +31,44 @@ main {
   width: 100%;
   height: 15rem;
   margin: 0 auto;
+  position: relative;
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+}
+
+.card--side {
+  width: 100%;
+  background: linear-gradient(135deg, brown, #fa1e1e);
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 1rem;
+  padding: 1rem;
+  cursor: pointer;
+  backface-visibility: hidden;
+  overflow: hidden;
+  transition: all 1s;
 }
 
 .card--front {
-  width: 100%;
-  background-color: brown;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border-radius: 1rem;
-  padding: 1rem;
+}
+
+.card--back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateY(180deg);
+}
+.card:hover .card--front {
+  transform: rotateY(-180deg);
+}
+
+.card:hover .card--back {
+  transform: rotateY(0);
 }
 
 .card--front div {
@@ -167,7 +194,7 @@ main {
   margin: 0 auto;
   padding: 1rem;
   border-radius: 0.5rem;
-  background-color: rgb(82, 118, 171);
+  background: linear-gradient(135deg, brown, #fa1e1e);
   color: white;
   font-weight: 500;
   font-size: 1rem;
@@ -179,7 +206,7 @@ main {
 }
 
 .button:hover {
-  background-color: rgb(34, 88, 120);
+  background: linear-gradient(135deg, brown, #fb5454);
 }
 
 .cvv {
