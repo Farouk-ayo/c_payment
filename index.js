@@ -8,10 +8,19 @@ const monthInput = document.querySelector("#month");
 const yearInput = document.querySelector("#year");
 const cvvInput = document.querySelector(".cvv");
 const cvv = document.querySelector(".card--cvv");
+const button = document.querySelector(".button");
 
 document.addEventListener("DOMContentLoaded", () => {
   monthInput.value = "";
   yearInput.value = "";
+
+  button.addEventListener("click", () => {
+    if (holderInput.value.length !== 16 || cvvInput.value.length !== 3) {
+      alert("Please fill all the fields");
+    } else {
+      alert("Payment Successful");
+    }
+  });
 });
 
 card.forEach((eachInput, index) => {
