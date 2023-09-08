@@ -23,7 +23,7 @@
                 <img src="icons/chip.png" alt="" />
               </div>
               <div class="card--type card--front__logo">
-                <img src="icons/visa.svg" alt="" />
+                <img class="card--logo" src="#" alt="" />
               </div>
             </div>
             <div>
@@ -110,6 +110,8 @@
               <label for="month">Card Expiration</label>
               <div class="time">
                 <select name="month" id="month">
+                  <option value="" disabled selected>month</option>
+
                   <option value="01">01</option>
                   <option value="02">02</option>
                   <option value="03">03</option>
@@ -125,6 +127,8 @@
                 </select>
 
                 <select name="year" id="year" required>
+                  <option value="" disabled selected>Year</option>
+
                   <option value="23">2023</option>
                   <option value="24">2024</option>
                   <option value="25">2025</option>
@@ -148,7 +152,7 @@
             </div>
           </div>
 
-          <button id="submit" class="button">submit</button>
+          <button id="#" class="button">submit</button>
         </form>
       </section>
     </main>
